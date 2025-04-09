@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+:root {
+    --colorOne: #2457AA !important;
+}
+
+.testimonial_bg-section {
+    background: linear-gradient(5deg, var(--colorOne) 30%, rgb(255, 253, 253) 30%);
+}
