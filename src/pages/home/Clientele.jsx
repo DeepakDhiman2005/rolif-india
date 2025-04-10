@@ -20,7 +20,7 @@ const Clientele = React.memo(() => {
         {/* Swiper Slider */}
         <Swiper
           spaceBetween={0} // No space between slides
-          slidesPerView={9} // Adjusted to match max breakpoint for consistency
+          slidesPerView={10} // Adjusted to match max breakpoint for consistency
           // centeredSlides={true}
           loop={true}
           autoplay={{
@@ -33,10 +33,10 @@ const Clientele = React.memo(() => {
           navigation={false}
           className="w-full"
           breakpoints={{
-            0: { slidesPerView: 1, spaceBetween: 0 },
-            600: { slidesPerView: 3, spaceBetween: 0 },
-            960: { slidesPerView: 4, spaceBetween: 0 },
-            1280: { slidesPerView: 7, spaceBetween: 0 },
+            0: { slidesPerView: 3, spaceBetween: 0 },
+            600: { slidesPerView: 4, spaceBetween: 0 },
+            960: { slidesPerView: 7, spaceBetween: 0 },
+            1280: { slidesPerView: 10, spaceBetween: 0 },
           }}
         >
           {Array(12)
@@ -46,7 +46,7 @@ const Clientele = React.memo(() => {
                 <img
                   src={`/images/clients/${index + 1}.png`}
                   alt={`Client ${index + 1}`}
-                  className="w-40 h-28 object-contain rounded-lg m-0 px-8 border border-solid border-gray-300" // Added h-24 for consistent height
+                  className="w-48 h-20 object-contain rounded-lg m-0 px-8 border border-solid border-gray-300" // Added h-24 for consistent height
                 />
               </SwiperSlide>
             ))}

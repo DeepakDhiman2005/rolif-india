@@ -1,9 +1,15 @@
 @import "tailwindcss";
 
+@theme {
+    --color-my-gray: #F7F8F7;
+    --color-my-wheat: #EDE8D0;
+}
+
 :root {
     --colorOne: #2457AA !important;
 }
 
 .testimonial_bg-section {
-    background: linear-gradient(5deg, var(--colorOne) 30%, rgb(255, 253, 253) 30%);
+    /* background: linear-gradient(5deg, var(--colorOne) 30%, rgb(255, 253, 253) 30%); */
+    background: linear-gradient(5deg, #EDE8D0 30%, rgb(255, 253, 253) 30%);
 }

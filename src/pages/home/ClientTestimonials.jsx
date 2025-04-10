@@ -15,10 +15,7 @@ const ClientTestimonials = () => {
 
     return (
         <div className="testimonial_bg-section w-full py-3 bg-transparent text-center">
-            <h2 className="text-[32px] uppercase font-semibold">Our Clients</h2>
-            <p className="text-lg font-semibold text-gray-800 max-w-4xl mx-auto mb-2">
-                What Our Satisfied Customers Say About Their Experience With Us
-            </p>
+            <h2 className="text-[32px] uppercase font-semibold">Client Testimonials</h2>
 
             {/* Swiper Slider with Arrows */}
             <div className="relative w-full px-4">

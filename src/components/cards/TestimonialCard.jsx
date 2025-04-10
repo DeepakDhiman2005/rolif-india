@@ -5,12 +5,12 @@ const TestimonialCard = ({ testimonial }) => {
         <div className="relative flex flex-col h-[210px] px-6 py-4 border border-solid border-gray-200 my-4 mb-8 text-center bg-white rounded-md shadow-md overflow-hidden">
             {/* Quote Icon Design */}
             <div className="absolute top-[-22px] left-[-8px] w-[100px] h-[100px] rounded-br-full flex items-center justify-center">
-                <FaQuoteLeft className="text-[20px] rotate-0 text-[#2457AA]" />
+                <FaQuoteLeft className="text-[20px] rotate-0 text-gray-800" />
             </div>
 
             {/* Content */}
             <div className="flex-grow">
-                <h3 className="text-lg font-semibold text-[#1C85C6]">{testimonial.title}</h3>
+                <h3 className="text-lg font-semibold text-gray-800">{testimonial.title}</h3>
                 <p className="text-sm text-gray-600 mt-1">{testimonial.feedback}</p>
 
                 {/* Footer: Avatar, Rating, Name, Designation */}
@@ -24,7 +24,7 @@ const TestimonialCard = ({ testimonial }) => {
                         ))}
                     </div>
 
-                    <h4 className="mt-1 font-semibold text-[#1C85C6]">{testimonial.name}</h4>
+                    <h4 className="mt-1 font-semibold text-gray-800">{testimonial.name}</h4>
                     <p className="text-sm text-gray-500">{testimonial.designation}</p>
                 </div>
             </div>

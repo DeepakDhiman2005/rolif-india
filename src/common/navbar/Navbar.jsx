@@ -30,7 +30,7 @@ const Navbar = () => {
         <>
             <nav className="w-full flex flex-col z-50 shadow-sm justify-center items-center">
                 {/* layer1 */}
-                <section className="w-full bg-white flex justify-between items-center py-3 px-8">
+                <section className="w-full bg-my-gray flex justify-between items-center py-3 px-8">
                     <div className="flex justify-center items-center gap-x-8">
                         <img src="/logo.svg" alt="logo" className="w-26" />
                         <SearchBar />
@@ -44,7 +44,7 @@ const Navbar = () => {
                 </section>
 
                 {/* layer2 */}
-                <section className="flex justify-center py-2 px-8 bg-gray-200 w-full items-center gap-x-6">
+                <section className="flex justify-center py-2 px-8 bg-gray-800 !text-gray-50 w-full items-center gap-x-6">
                     {menuLinks.map((item, index) => (
                         <MenuLink key={index} {...item} />
                     ))}
