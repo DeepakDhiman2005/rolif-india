@@ -1,10 +1,17 @@
 import { Title } from "react-head";
+import Clientele from "../home/Clientele";
+import ClientTestimonials from "../home/ClientTestimonials";
+import WhyChooseUs from "../home/WhyChooseUs";
 
 const AboutUs = () => {
     return <>
         <main>
             <Title>About Us</Title>
-            <h2>About</h2>
+           
+
+            <WhyChooseUs />
+            <ClientTestimonials />
+            <Clientele />
         </main>
     </>
 }

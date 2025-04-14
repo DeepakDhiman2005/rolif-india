@@ -11,10 +11,10 @@ const Banners = () => {
     const images = [
         <>
             <div className="grid grid-cols-2 w-full">
-                <img src={'/images/banner-image-1.png'} alt={`banner image`} className="w-full h-auto object-cover" />
-                <img src={'/images/banner-image-1.png'} alt={`banner image`} className="w-full h-auto object-cover" />
-                <img src={'/images/banner-image-1.png'} alt={`banner image`} className="w-full h-auto object-cover" />
-                <img src={'/images/banner-image-1.png'} alt={`banner image`} className="w-full h-auto object-cover" />
+                <img src={'/images/banners/furniture-banner.jpg'} alt={`banner image`} className="w-full h-auto object-cover" />
+                <img src={'/images/banners/furniture-banner.jpg'} alt={`banner image`} className="w-full h-auto object-cover" />
+                <img src={'/images/banners/furniture-banner.jpg'} alt={`banner image`} className="w-full h-auto object-cover" />
+                <img src={'/images/banners/furniture-banner.jpg'} alt={`banner image`} className="w-full h-auto object-cover" />
             </div>
         </>,
         <>
@@ -28,9 +28,9 @@ const Banners = () => {
     ]
 
     return (
-        <section className="w-full">
+        <section className="w-full pb-5">
             <Swiper
-                modules={[Autoplay, Pagination, Navigation]}
+                modules={[Autoplay,]}
                 autoplay={{ delay: 3000, disableOnInteraction: false }}
                 pagination={{ clickable: true }}
                 navigation
