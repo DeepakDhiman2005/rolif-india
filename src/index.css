@@ -3,6 +3,9 @@
 @theme {
     --color-my-gray: #F7F8F7;
     --color-my-wheat: #EDE8D0;
+
+    /* products */
+    --text-product-heading-size: 40px;
 }
 
 :root {

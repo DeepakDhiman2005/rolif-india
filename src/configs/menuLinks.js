@@ -12,23 +12,23 @@ const menuLinks = [
         name: "Tile & Sanitary Ware",
         subMenu: [
             {
-                name: 'Tiles', route: '/tiles',
+                name: 'Tiles', route: '/tiles-and-sanitary-ware',
                 subMenu: [
-                    { name: 'Floor Tiles', route: '/tiles/floor-tiles' },
-                    { name: 'Wall Tiles', route: '/tiles/wall-tiles' },
-                    { name: 'Outdoor Tiles', route: '/tiles/outdoor-tiles' },
-                    { name: 'Mosaic Tiles', route: '/tiles/mosaic-tiles' },
-                    { name: 'Custom Tile Solutions', route: '/tiles/custom-tile-solutions' },
+                    { name: 'Floor Tiles', route: '/tiles-and-sanitary-ware/floor-tiles' },
+                    { name: 'Wall Tiles', route: '/tiles-and-sanitary-ware/wall-tiles' },
+                    { name: 'Outdoor Tiles', route: '/tiles-and-sanitary-ware/outdoor-tiles' },
+                    { name: 'Mosaic Tiles', route: '/tiles-and-sanitary-ware/mosaic-tiles' },
+                    { name: 'Custom Tile Solutions', route: '/tiles-and-sanitary-ware/custom-tile-solutions' },
                 ]
             },
             {
-                name: 'Sanitary Ware', route: '/sanitary',
+                name: 'Sanitary Ware', route: '/tiles-and-sanitary-ware',
                 subMenu: [
-                    { name: 'Toilets & Bidets', route: '/toilets-and-bidets' },
-                    { name: 'Showers & Bathtubs', route: '/showers-and-bathtubs' },
-                    { name: 'Faucets & Mixers', route: '/faucets-and-mixers' },
-                    { name: 'Bathroom Accessories', route: '/bathroom-accessories' },
-                    { name: 'Bathroom Vanities & Storage', route: '/bathroom-vanities-and-storage' },
+                    { name: 'Toilets & Bidets', route: '/tiles-and-sanitary-ware/toilets-and-bidets' },
+                    { name: 'Showers & Bathtubs', route: '/tiles-and-sanitary-ware/showers-and-bathtubs' },
+                    { name: 'Faucets & Mixers', route: '/tiles-and-sanitary-ware/faucets-and-mixers' },
+                    { name: 'Bathroom Accessories', route: '/tiles-and-sanitary-ware/bathroom-accessories' },
+                    { name: 'Bathroom Vanities & Storage', route: '/tiles-and-sanitary-ware/bathroom-vanities-and-storage' },
                 ]
             }
             // {
@@ -76,8 +76,8 @@ const menuLinks = [
     {
         name: "Our Services",
         subMenu: [
-            { name: "Interior & Fit-Out Works", route: "/service/interior-out-fit" },
-            { name: "Electrical Services", route: "/service/electrical-services" },
+            { name: "Interior & Fit-Out Works", route: "/services/interior-out-fit" },
+            { name: "Electrical Services", route: "/services/electrical-services" },
         ]
     },
 ]
