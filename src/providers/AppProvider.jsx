@@ -1,12 +1,16 @@
 import { HeadProvider } from "react-head";
+import { Provider } from "react-redux";
+import store from "../redux/store";
 
 const AppProvider = ({
     children
 }) => {
     return <>
-        <HeadProvider>
-            {children}
-        </HeadProvider>
+        <Provider store={store}>
+            <HeadProvider>
+                {children}
+            </HeadProvider>
+        </Provider>
     </>
 }
 
