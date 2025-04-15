@@ -28,7 +28,7 @@ const WhyChooseUs = () => {
         <div className="flex flex-col justify-start items-start">
             <div className="flex justify-start text-[20px] gap-x-2 items-center">
                 {icon}
-                <h2 className="font-semibold text-gray-800">{title}</h2>
+                <h2 className="font-semibold text-main-color">{title}</h2>
             </div>
             <p>{description}</p>
         </div>
@@ -37,8 +37,8 @@ const WhyChooseUs = () => {
     return (
         <section className="bg-[linear-gradient(rgba(255,255,255,0.9),rgba(255,255,255,0.9)),url('/images/bg-image-2.jpg')] bg-cover bg-center flex justify-between items-start w-full px-4 py-5 gap-6 flex-wrap lg:flex-nowrap">
             <div className="flex flex-col justify-start items-start w-full lg:w-[55%] py-10">
-                <h2 className="text-[20px] uppercase font-semibold text-gray-800">Mindfully Made Packaging</h2>
-                <p className="text-[30px] font-semibold leading-tight text-gray-800 py-2">
+                <h2 className="text-[20px] uppercase font-semibold text-main-color">Mindfully Made Packaging</h2>
+                <p className="text-[30px] font-semibold leading-tight text-main-color py-2">
                     Our Anthem is ‘We’ll Lead with Innovative Excellence.’
                 </p>
               
@@ -47,8 +47,8 @@ const WhyChooseUs = () => {
                 <p className="py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, enim eaque esse, delectus corrupti expedita officiis sunt blanditiis dicta quidem molestias neque earum distinctio placeatbo voluptatibus corrupti molestiae aliquam, quas suscipit minima iste enim id, voluptatem, cum nemo sint quis veritatis quia! Beatae aliquid inventore rem!</p>
 
                   <div className="w-full grid grid-cols-2 my-3 gap-x-5 gap-y-3">
-                  <Card icon={<RiMedalLine size={20} className="text-gray-800" />} title="Safest Product" description="Our personal trainers will help you find a perfect workout." />
-                    <Card icon={<RiMedalLine size={20} className="text-gray-800" />} title="Safest Product" description="Our personal trainers will help you find a perfect workout." />
+                  <Card icon={<RiMedalLine size={20} className="text-main-color" />} title="Safest Product" description="Our personal trainers will help you find a perfect workout." />
+                    <Card icon={<RiMedalLine size={20} className="text-main-color" />} title="Safest Product" description="Our personal trainers will help you find a perfect workout." />
                     
                 </div>
             </div>

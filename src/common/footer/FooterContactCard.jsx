@@ -9,7 +9,7 @@ const FooterContactCard = ({
                 {icon}
             </div>
             <div className="flex flex-col justify-start gap-y-4 -space-y-4 items-start">
-                <h2 className="font-semibold text-[20px] text-gray-800">{title}</h2>
+                <h2 className="font-semibold text-[20px] text-main-color">{title}</h2>
                 <p className="text-gray-700">{content}</p>
             </div>
         </div>

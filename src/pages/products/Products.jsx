@@ -52,7 +52,7 @@ const Products = () => {
     return <>
         <main className="w-full px-8 py-4">
             <h2 className="font-semibold text-product-heading-size">Living Room</h2>
-            <p className="text-gray-800">Inspired choices for all your Livingroom needs. For any occasion, for every occasion.</p>
+            <p className="text-main-color">Inspired choices for all your Livingroom needs. For any occasion, for every occasion.</p>
 
             <img src="https://cms.landmarkshops.in/cdn-cgi/image/w=1232,q=85,fit=cover/Home-Centre/Test-UI/DP1-Living-Desktop-02Apr2025-1B.jpg" alt="image" className="w-full my-4" />
 

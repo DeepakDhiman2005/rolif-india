@@ -6,8 +6,8 @@ const FooterLinksCard = ({
 }) => {
     return <>
         <div className="flex flex-col justify-start items-start">
-            <h2 className="text-[18px] leading-tight font-semibold text-gray-800">{item?.name}</h2>
-            <div className="h-[2px] bg-gray-800 w-full"></div>
+            <h2 className="text-[18px] leading-tight font-semibold text-main-color">{item?.name}</h2>
+            <div className="h-[2px] bg-main-color w-full"></div>
             <div className="flex flex-col justify-start my-2 items-start">
                 {
                     item?.subMenu?.map((it, index) => (

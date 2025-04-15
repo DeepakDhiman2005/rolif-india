@@ -20,7 +20,7 @@ const Footer = () => {
             <section className="w-full grid grid-cols-1 sm:grid-cols-2 justify-start items-start lg:grid-cols-[1.5fr_1fr_1.5fr_3fr] gap-6">
                 <div className="flex flex-col justify-start items-start">
                     <img src="/logo.svg" alt="image" className="w-36" />
-                    {/* <p className="my-3 font-semibold text-gray-800">123 Fifth Avenue, NY 10160 Lane no 17, New York NY688101</p>
+                    {/* <p className="my-3 font-semibold text-main-color">123 Fifth Avenue, NY 10160 Lane no 17, New York NY688101</p>
                     <div className="flex justify-start items-center gap-x-2">
                         <IoIosCall size={16} />
                         <span>123-456-7890, 123-456-7891</span>
@@ -29,8 +29,8 @@ const Footer = () => {
                 </div>
 
                 <div className="flex justify-start flex-col items-start">
-                    <h2 className="text-[18px] font-semibold text-gray-800">Quick Link</h2>
-                    <div className="h-[2px] bg-gray-800 w-full"></div>
+                    <h2 className="text-[18px] font-semibold text-main-color">Quick Link</h2>
+                    <div className="h-[2px] bg-main-color w-full"></div>
                     <div className="flex flex-col justify-start my-2 items-start">
                         {
                             navLinks.map((item, index) => (

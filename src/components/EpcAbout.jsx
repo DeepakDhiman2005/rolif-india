@@ -7,7 +7,7 @@ const EpcAbout = () => {
       
       {/* Left Content */}
       <div className="md:w-1/2 space-y-6">
-        <h2 className="text-4xl font-bold text-gray-800 leading-snug">
+        <h2 className="text-4xl font-bold text-main-color leading-snug">
         Elevate Your Vision with
           <span className="text-gray-400"> Expert EPC Solutions</span>
         </h2>

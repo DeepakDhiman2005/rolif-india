@@ -1,8 +1,10 @@
 @import "tailwindcss";
+@config "../tailwind.config.js";
 
 @theme {
     --color-my-gray: #F7F8F7;
     --color-my-wheat: #EDE8D0;
+    --color-main-color: #1e2939;
 
     /* products */
     --text-product-heading-size: 40px;

@@ -6,6 +6,9 @@ import NavLink from "./NavLink";
 import SearchBar from "./SearchBar";
 import StickyNavbar from "./StickyNavbar";
 
+import { FaUserCircle } from "react-icons/fa";
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
     const [isStickyNavOpen, setIsStickyNavOpen] = useState(false);
 
@@ -40,11 +43,16 @@ const Navbar = () => {
                         {navLinks.map((item, index) => (
                             <NavLink key={index} {...item} />
                         ))}
+                        <Link to={'/login'} className="h-auto w-auto flex justify-center items-center">
+                            <button className="cursor-pointer hover:text-main-color">
+                                <FaUserCircle size={24} />
+                            </button>
+                        </Link>
                     </div>
                 </section>
 
                 {/* layer2 */}
-                <section className="flex justify-center py-2 px-8 bg-gray-800 !text-gray-50 w-full items-center gap-x-6">
+                <section className="flex justify-center py-2 px-8 bg-main-color !text-gray-50 w-full items-center gap-x-6">
                     {menuLinks.map((item, index) => (
                         <MenuLink key={index} {...item} />
                     ))}

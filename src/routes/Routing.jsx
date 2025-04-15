@@ -1,27 +1,58 @@
+// src/router.js
 import { lazy } from "react";
-import { Route, Routes } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import AppLayout from "../layouts/AppLayout";
 
-// lazy
+// lazy-loaded components
 const Home = lazy(() => import("../pages/home/Home"));
 const AboutUs = lazy(() => import("../pages/about/AboutUs"));
 const Products = lazy(() => import("../pages/products/Products"));
+const Login = lazy(() => import("../pages/validations/Login"));
+
+const router = createBrowserRouter([
+    {
+        path: "/",
+        element: <AppLayout />, // includes <ScrollRestoration /> if needed
+        children: [
+            {
+                index: true,
+                element: <Home />,
+            },
+            {
+                path: "about-us",
+                element: <AboutUs />,
+            },
+            {
+                path: "furniture/*",
+                element: <Products />,
+            },
+            {
+                path: "tiles-and-sanitary-ware/*",
+                element: <Products />,
+            },
+            {
+                path: "electrics/*",
+                element: <Products />,
+            },
+            {
+                path: "services/*",
+                element: <Products />,
+            },
+        ],
+    },
+    {
+        path: "/login",
+        element: <Login />,
+    },
+    {
+        path: "*",
+        element: <h2>404 page!</h2>,
+    },
+]);
 
 const Routing = () => {
     return <>
-        <Routes>
-            <Route path="/" element={<Home />} index />
-            <Route path="/about-us" element={<AboutUs />} />
-
-            {/* products start */}
-            <Route path="/furniture/*" element={<Products />} />
-            <Route path="/tiles-and-sanitary-ware/*" element={<Products />} />
-            <Route path="/electrics/*" element={<Products />} />
-            <Route path="/services/*" element={<Products />} />
-            {/* products end */}
-
-            {/* 404 page */}
-            <Route path="*" element={<h2>404 page!</h2>} />
-        </Routes>
+        <RouterProvider router={router} />
     </>
 }
 

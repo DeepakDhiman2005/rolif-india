@@ -13,7 +13,7 @@ const FooterForm = () => {
             </div>
 
             <Button
-                className="bg-gray-900 text-white py-2 px-4 capitalize font-medium rounded-md cursor-pointer shadow-sm"
+                className="bg-main-color text-white py-2 px-4 capitalize font-medium rounded-md cursor-pointer shadow-sm"
             >Submit</Button>
         </div>
     </>

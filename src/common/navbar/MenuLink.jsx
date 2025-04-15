@@ -23,7 +23,7 @@ const MenuLink = ({ name = '', subMenu = [] }) => {
             >
               <MenuHandler>
                 <MenuItem className="p-0 w-full !outline-none">
-                  <div className="w-full flex justify-between items-center py-2 px-3 rounded-lg hover:bg-gray-800 hover:text-white">
+                  <div className="w-full flex justify-between items-center py-2 px-3 rounded-lg hover:bg-main-color hover:text-white">
                     <p>{item.name}</p>
                     <IoIosArrowDown size={16} className="-rotate-90" />
                   </div>
@@ -35,7 +35,7 @@ const MenuLink = ({ name = '', subMenu = [] }) => {
                   <MenuItem key={subIndex} className="p-0 !outline-none">
                     <Link
                       to={subItem.route}
-                      className="w-full flex justify-start items-center py-2 px-3 rounded-lg text-sm text-gray-700 hover:bg-gray-800 hover:text-white"
+                      className="w-full flex justify-start items-center py-2 px-3 rounded-lg text-sm text-gray-700 hover:bg-main-color hover:text-white"
                     >
                       {subItem.name}
                     </Link>
@@ -47,7 +47,7 @@ const MenuLink = ({ name = '', subMenu = [] }) => {
             <MenuItem key={index} className="p-0 w-full outline-none">
               <Link
                 to={item.route}
-                className="w-full flex justify-start items-center py-2 px-3 rounded-lg hover:bg-gray-800 hover:text-white"
+                className="w-full flex justify-start items-center py-2 px-3 rounded-lg hover:bg-main-color hover:text-white"
               >
                 {item.name}
               </Link>
