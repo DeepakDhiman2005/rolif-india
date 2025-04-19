@@ -1,6 +1,8 @@
 import React from 'react'
 
-const TilesAbout = () => {
+const TilesAbout = ({
+  image = ""
+}) => {
   return (
     <div className="bg-gray-100 py-16 px-6 md:px-16">
     <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
@@ -25,7 +27,7 @@ From sleek, contemporary designs to classic textures, our tiles are engineered f
       <div className="md:w-1/2">
         <div className="relative w-full h-96 overflow-hidden rounded-2xl shadow-xl">
           <img
-            src="/images/furniture/2.gif"
+            src={image}
             alt="Furniture"
             className="w-full h-full object-cover transform transition-transform duration-500 hover:scale-105"
           />

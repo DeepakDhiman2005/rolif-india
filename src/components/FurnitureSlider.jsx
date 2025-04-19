@@ -1,6 +1,6 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -8,25 +8,10 @@ import "swiper/css/pagination";
 const FurnitureSlider = ({
   sliderImages = []
 }) => {
-
-    // const sliderImages = [
-    //     "/images/banner-image-1.png",
-    //     "/images/banner-image-1.png",
-    //     "/images/banner-image-1.png",
-    //     "/images/banner-image-1.png",
-    //     "/images/banner-image-1.png",
-    //     "/images/banner-image-1.png",
-    //     "/images/banner-image-1.png",
-    //     "/images/banner-image-1.png",
-       
-       
-       
-    //   ];
-
   return (
     <div className="w-full  mx-auto">
       <Swiper
-        modules={[Autoplay,]}
+        modules={[Autoplay, Navigation]}
         spaceBetween={30}
         slidesPerView={5}
         loop={true}

@@ -10,32 +10,27 @@ const Banners = () => {
 
     const images = [
         <>
-            <div className="grid grid-cols-2 w-full">
+            {/* <div className="grid grid-cols-2 w-full">
                 <img src={'/images/banners/furniture-banner.jpg'} alt={`banner image`} className="w-full h-auto object-cover" />
                 <img src={'/images/banners/furniture-banner.jpg'} alt={`banner image`} className="w-full h-auto object-cover" />
                 <img src={'/images/banners/furniture-banner.jpg'} alt={`banner image`} className="w-full h-auto object-cover" />
                 <img src={'/images/banners/furniture-banner.jpg'} alt={`banner image`} className="w-full h-auto object-cover" />
-            </div>
+            </div> */}
+            <img src="/banners/banner1.png" alt="image" />
         </>,
-        <>
-            <div className="grid grid-cols-2 w-full">
-                <img src={'/images/banners/furniture-banner.jpg'} alt={`banner image`} className="w-full h-auto object-cover" />
-                <img src={'/images/banners/furniture-banner.jpg'} alt={`banner image`} className="w-full h-auto object-cover" />
-                <img src={'/images/banners/furniture-banner.jpg'} alt={`banner image`} className="w-full h-auto object-cover" />
-                <img src={'/images/banners/furniture-banner.jpg'} alt={`banner image`} className="w-full h-auto object-cover" />
-            </div>
-        </>
+        <img src="/banners/banner2.png" alt="image" />,
+        <img src="/banners/banner3.png" alt="image" />,
     ]
 
     return (
         <section className="w-full pb-5">
             <Swiper
-                modules={[Autoplay,]}
+                modules={[Autoplay, Navigation]}
                 autoplay={{ delay: 3000, disableOnInteraction: false }}
-                pagination={{ clickable: true }}
+                // pagination={{ clickable: true }}
                 navigation
                 loop
-                className="w-full"
+                className="w-full select-none"
             >
                 {images.map((src, idx) => (
                     <SwiperSlide key={idx}>

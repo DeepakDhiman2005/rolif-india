@@ -5,10 +5,9 @@ import WhyChooseUs from "../home/WhyChooseUs";
 
 const AboutUs = () => {
     return <>
-        <main>
-            <Title>About Us</Title>
-           
-
+        <Title>About Us</Title>
+        <main className="w-full">
+            <img src="/banners/About-us.png" alt="image" />
             <WhyChooseUs />
             <ClientTestimonials />
             <Clientele />

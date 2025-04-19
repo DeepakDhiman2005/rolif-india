@@ -5,8 +5,12 @@ import PasswordField from "./PasswordField";
 import MyButton from "../../components/buttons/MyButton";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { loginSchema } from "../../configs/validations";
+import axios from "axios";
+import { useState } from "react";
+import { Spinner } from "@material-tailwind/react";
 
 const Login = () => {
+    const [isLoad, setIsLoad] = useState(false);
     const {
         control,
         formState: {
@@ -21,8 +25,23 @@ const Login = () => {
         }
     });
 
-    const onSubmit = (data) => {
-        console.log(data);
+    const onSubmit = async (data) => {
+        const BASE_URL = import.meta.env.VITE_API_URL;
+        const formData = new FormData();
+        formData.append('email', data.email);
+        formData.append('password', data.password);
+
+        setIsLoad(true);
+        try {
+            const response = await axios.postForm(`${BASE_URL}/auth/login.php`, formData);
+            if (response.status === 200 || response.status === 201) {
+                console.log(response.data);
+            }
+        } catch (error) {
+            console.log("Login Error:", error);
+        } finally {
+            setIsLoad(false);
+        }
     }
 
     return <>
@@ -43,7 +62,10 @@ const Login = () => {
                         control={control}
                         label={"Password"}
                     />
-                    <MyButton type="submit" className="bg-blue-800 !text-[16px]">Submit</MyButton>
+                    <MyButton type="submit" className="bg-blue-800 !text-[16px] gap-x-2 flex justify-center items-center">
+                        {isLoad ? <Spinner className="w-4 h-4" /> : null}
+                        Submit
+                    </MyButton>
                 </div>
             </form>
         </main>

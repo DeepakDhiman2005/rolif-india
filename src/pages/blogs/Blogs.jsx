@@ -6,8 +6,8 @@ const Blogs = () => {
     return <>
         <Title>Blogs</Title>
         <main className="w-full">
-            <img src="https://glowgreen.in/website/images/inner-banners/blog.png" alt="banner image" className="w-auto h-auto" />
-            <div className="w-full grid grid-cols-3 gap-6 px-8 py-5">
+            <img src="/banners/Our-blogs.png" alt="banner image" className="w-auto h-auto" />
+            <div className="w-full grid grid-cols-3 gap-6 bg-gray-100 px-4 md:px-8 py-5">
                 {
                     allBlogs.map((item, index) => (
                         <BlogCard key={index} {...item} />
